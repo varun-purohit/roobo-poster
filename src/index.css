@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-infinite {
+  @apply animate-bounce;
+  animation: scroll 3s linear infinite;
+  height: 200%; /* twice the container's height */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10%);
+  }
+}
